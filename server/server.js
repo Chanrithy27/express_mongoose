@@ -3,7 +3,7 @@ const app = express();
 
 require('./config/mongoose.config');
 
-app.use(express.json(), exoress.urlencoded({ extended: true }));
+app.use(express.json(), express.urlencoded({ extended: true }));
 
 const AllMyUserRoutes = require('./routes/user.routes');
 AllMyUserRoutes(app);
